@@ -1,0 +1,259 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f4f8; /* Light grey background */
+  color: #333; /* Darker text color for better readability */
+}
+
+/* Header Styles */
+.header {
+  background-color: #4a90e2; /* Blue background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #357abd; /* Slightly darker blue border */
+}
+
+.header-title {
+  font-size: 2.5em;
+  margin: 0;
+}
+.home {
+  text-align: center; /* Center align the content */
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2.5em;
+  color: #4a90e2; /* Blue color for the heading */
+  margin-bottom: 20px;
+}
+
+/* Header Navigation Styles */
+.header-nav {
+  display: flex;
+  justify-content: center; /* Center align the nav links */
+  padding: 10px 0; /* Padding for better spacing */
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 30px; /* Space between links (increased to 30px) */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth transition for link color */
+}
+
+.header-nav a:hover {
+  color: #f39c12; /* Gold color on hover */
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #4a90e2; /* Blue background */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #357abd; /* Slightly darker blue border */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth transition for link color */
+}
+
+.navbar a:hover {
+  color: #f39c12; /* Gold color on hover */
+  text-decoration: underline;
+}
+
+.navbar .logout-button {
+  background-color: #e74c3c; /* Red background for logout */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar .logout-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the product list */
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: 240px; /* Fixed width for consistent layout */
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.product:hover {
+  transform: scale(1.03); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Cart Styles */
+.cart {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Limit width for better layout */
+  margin: 20px auto; /* Center align and add top/bottom margin */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item button {
+  background-color: #4a90e2; /* Blue background for button */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-item button:hover {
+  background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Login Page Styles */
+.login {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto; /* Center align and add top/bottom margin */
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/* Login Page Styles */
+.login button {
+  background-color: #4a90e2; /* Blue background for button */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login button:hover {
+  background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #4a90e2; /* Blue background */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #357abd; /* Slightly darker blue border */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2em;
+  }
+
+  .header-nav a {
+    margin: 0 10px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .product {
+    width: 100%; /* Full width on smaller screens */
+    margin: 5px 0; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5em;
+  }
+
+  .header-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .login {
+    width: 90%; /* Full width on very small screens */
+  }
+}
